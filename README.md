@@ -2,7 +2,9 @@
 
 I work on open-source tools for software supply chain security, mostly in Go.
 
-My main project is [zanadir](https://github.com/MustacheCase/zanadir). You point it at a repository and it looks at the CI pipeline, tells you what's missing (security scanning, linting, tests and so on) and suggests open-source tools that can fill the gap. If you'd rather run it in CI, there's a [GitHub Action](https://github.com/MustacheCase/zanadir-action) too.
+My main project is [zanadir](https://github.com/MustacheCase/zanadir). It grades whether a repository's CI can actually fail the build: it finds the checks that are missing (security scanning, linting, tests and so on) and the ones wired so they can never block a merge, then suggests open-source tools to close the gaps. You can [scan a repository in your browser](https://mustachecase.github.io/scan/) with nothing to install, or run it in CI with the [GitHub Action](https://github.com/MustacheCase/zanadir-action).
+
+[![zanadir: scan this CI](https://img.shields.io/badge/zanadir-scan_this_CI-b4441f)](https://mustachecase.github.io/scan/) [![GitHub stars](https://img.shields.io/github/stars/MustacheCase/zanadir?style=flat)](https://github.com/MustacheCase/zanadir)
 
 I also contribute to Anchore's tools, usually when I hit something I need myself:
 
